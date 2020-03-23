@@ -5,11 +5,17 @@ let res1 = /http:|https:/.test(str1);
 console.log('Задание второе: ');
 console.log(res1); 
 
+/*
+Условие задачи Определите, что ли заканчивается переданная строка расширением jpg или jpeg.
+*/
 let str2 = 'riba.png';
 let res2 = /.png$|.jpg$|.jpeg$/.test(str2);
 console.log('Задание четвёртое: ');
 console.log(res2);
 
+/*
+использовать length нельзя, все писать в выражении
+*/
 let str3 = '20013203';
 if (str3.length >= 1 && str3.length < 12) {
 	let res3 = /\d/.test(str3);
@@ -30,6 +36,9 @@ else {
 	console.log('Задание восьмое: ');
 	console.log('неверный формат даты'); }
 
+/*
+выражение должно быть универсальным
+*/
 let str5 = 'faerr12@gmail.ru';
 let res5 = /@gmail.com$|@bk.ru$|@rambler.ru$/.test(str5);
 console.log('Задание десятое: ');
